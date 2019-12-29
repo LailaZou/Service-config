@@ -23,11 +23,11 @@ pipeline {
         }
 
 
-        stage ('package Stage') {
-            steps {
-                    bat  'mvn package conf-app'
+        // stage ('Deployment Stage') {
+        //     steps {
+        //             bat  'mvn deploy'
                 
-            }
-        }
+        //     }
+        // }
     }
 }
