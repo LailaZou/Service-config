@@ -23,9 +23,9 @@ pipeline {
         }
 
 
-        stage ('Deployment Stage') {
+        stage ('package Stage') {
             steps {
-                    bat  'mvn deploy'
+                    bat  'mvn package conf-app'
                 
             }
         }
